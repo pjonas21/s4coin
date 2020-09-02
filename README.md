@@ -9,5 +9,5 @@
 ### Paulo Jonas Alves da Silva
 ### Francisco Yury Maciel Braga
 ### Manuel Ferreira
-### Miqueias Morais
+### Francisco Miqueias Pinto de Morais
 ### Leandro Sousa da Silva
