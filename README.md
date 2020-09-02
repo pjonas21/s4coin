@@ -8,6 +8,6 @@
 ### Equipe:
 ### Paulo Jonas Alves da Silva
 ### Francisco Yury Maciel Braga
-### Manuel Ferreira
+### Manuel Ferreira do Nascimento Neto
 ### Francisco Miqueias Pinto de Morais
 ### Leandro Sousa da Silva
