@@ -36,7 +36,7 @@ def mine():
     previous_hash = blockchain.hash(last_block)
     block = blockchain.new_block(proof, previous_hash)
     response = {
-        'message': "New Block Added",
+        'message': "Novo bloco adicionado",
         'index': block['index'],
         'transactions': block['transactions'],
         'proof': block['proof'],
@@ -59,12 +59,12 @@ def consensus():
 
     if replaced:
         response = {
-            'message': 'Our Chain was replaced',
+            'message': 'Nossa cadeia foi substituída',
             'new_chain': blockchain.chain
         }
     else:
         response = {
-            'message': 'Our chain is authoritative',
+            'message': 'Rede autorizada',
             'chain': blockchain.chain
         }
     return jsonify(response), 200
@@ -75,13 +75,13 @@ def register_nodes():
 
     nodes = values.get('nodes')
     if nodes is None:
-        return "Error: Please supply a valid list  of nodes", 400
+        return "Erro: insira uma lista válida", 400
 
     for node in nodes:
         blockchain.register_node(node)
 
     response = {
-        'message': 'New Nodes Have Been Added',
+        'message': 'Novos nós foram adicionados',
         'total_nodes': list(blockchain.nodes),
     }
     return jsonify(response), 201
@@ -98,7 +98,7 @@ def new_transaction():
     # cria uma nova transacao
     index = blockchain.new_transaction(values['sender'], values['recipient'], values['amount'])
 
-    response = {'message': f'Transaction will be added to Block {index}'}
+    response = {'message': f'Transação será adicionada ao Bloco {index}'}
     return jsonify(response), 201
 
 
