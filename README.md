@@ -22,6 +22,6 @@ Deve ser iniciada, que terá como endereço o "localhost:5000", por padrão.
 
 A partir desse ponto, toda a negação é feita pelo browser de internet, da seguinte forma (exemplos - funções presentes no código):
 
-localhost:5000/
+localhost:5000/ <br>
 localhost:5000/mine
 localhost:5000/chain
