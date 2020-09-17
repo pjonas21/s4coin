@@ -4,7 +4,6 @@ from time import time
 import requests
 from uuid import uuid4
 from urllib.parse import urlparse
-from ecdsa import SigningKey, NIST384p
 
 from flask import Flask, jsonify, request
 
